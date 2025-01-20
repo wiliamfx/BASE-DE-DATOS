@@ -27,5 +27,19 @@ alter database wilde modify name= informaticonfig;
 
 --TABLAS EN SQL SERVER : SE REPRESENTA POR CAMPOS Y FILAS
 
+create table empleados(
+idempleado int ,
+nombre varchar(30) not null,
+apellido varchar(35) not null,
+edad numeric(2),
+telefono numeric(10),
+direccion varchar(100),
+fecha_nacimiento date,
+salario decimal(18,2),
+activo char(2)
+);
+
+
+
 
 
