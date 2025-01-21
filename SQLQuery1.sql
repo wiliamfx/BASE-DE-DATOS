@@ -39,6 +39,84 @@ salario decimal(18,2),
 activo char(2)
 );
 
+--esto es para ver que tipo de datos va almacenar cada atributos
+exec sp_help empleados;
+
+-- Insertar datos a la tabla 
+insert into empleados values(1,'wiliam','gastelu',18,123456789,'santa isabel mz a lt 4','2024-09-03',300.25,'si');
+insert into empleados values(2,'jose','martinez',25,987456321,'ufc','2024-09-03',300.25,'si');
+--para mostrar la tabla los datos insertado aremos la consulta select
+select * from empleados
+
+--nos muestra todas las tablas de la bd que estamos usando
+select * from sys.tables
+
+-- para cambiar de nombre ala tabla ya creada
+
+exec sp_rename 'empleados','usuarios' --> el primero es la tabla actual el sgeugndo es el nuevo tabla
+
+--para eliminar una tabla ya creada
+
+drop table empleados
+
+--para eliminar todo los registro de la tabla 
+truncate table empleados 
+
+--para borrar un registro en especifico 
+
+delete from empleados where idempleado=1;
+
+--para agregar un campo a una tabla ya creada 
+
+alter table empleados add sexo char(1)
+
+insert into empleados values(3,'maki','nestor',58,456123456,'polonia ms d 45','1996-09-12',54.23,'no','F');
+
+--para eliminar un campo de una tabla ya creada
+
+alter table empleados drop column sexo;
+
+
+--OPERADORES RELACIONALES
+--   = COMPARA SI DOS VALORES SON IGUALES
+--   != COMPARA SI DOS VALORES SON DIFERENTES
+
+--  PARA VER OTRA FORMA DIFERENTE EN SQL SERVER ES ASI :        <>
+
+--   > COMPARA SI UN VALOR ES MAYOR QUE OTRO
+--   < COMPARA SI UN VALOR ES MENOR QUE OTRO
+--   >= COMPARA SI UN VALOR ES MAYOR O IGUAL
+--   <= COMPARA SI UN VALOR ES MENOR O IGUAL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+truncate table empleados
+select * from empleados
+
+
+
+
+
+
+
+
 
 
 
