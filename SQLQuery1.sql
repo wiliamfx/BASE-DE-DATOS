@@ -413,4 +413,3 @@ SET IDENTITY_INSERT PERSONAS6 OFF;   --esto desactiva el identity donde para reg
 
 
 
-
