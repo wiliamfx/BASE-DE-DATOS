@@ -409,7 +409,7 @@ SET IDENTITY_INSERT PERSONAS6 ON ; --activa el identity
 SET IDENTITY_INSERT PERSONAS6 OFF;   --esto desactiva el identity donde para registra deberas ingresar los campos 
 
 
-
+--hola
 
 
 
